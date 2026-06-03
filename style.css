@@ -63,6 +63,21 @@ div {
     z-index: 1001;
 }
 
+@media (max-width: 768px) {
+    .navbar{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px;  
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    position: static;
+    top: 150px;
+    left: 270px;       
+}
+}
+
 .nav-links {
     display: flex;          
     list-style: none;       
@@ -82,6 +97,42 @@ div {
     
 }
 
+.home{
+    display: inline-block;
+    background-color: #E6C76A;
+    border-radius: 10px;
+}
+
+.vocab{
+    display: inline-block;
+    background-color: #E6C76A;
+    border-radius: 10px;
+}
+
+.gram {
+    display: inline-block;
+    background-color: #E6C76A;
+    border-radius: 10px;
+}
+
+.trans{
+    display: inline-block;
+    background-color: #E6C76A;
+    border-radius: 10px;
+}
+
+.quiz{
+    display: inline-block;
+    background-color: #E6C76A;
+    border-radius: 10px;
+}
+
+.except{
+    display: inline-block;
+    background-color: #E6C76A;
+    border-radius: 10px;
+}
+
 .bottom-down{
     margin: auto;
 }
@@ -99,7 +150,7 @@ div {
     z-index: 1001;
     border-radius: 0 0 12px 12px;
     padding:12px 40px;
-
+    clear: left;
 }
 
 .bottom-page a {
@@ -109,4 +160,3 @@ div {
     font-weight: 400;
     font-style: italic;
 }
-
