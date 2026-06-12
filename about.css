@@ -1,1 +1,73 @@
+body{
+    background-color: #FFF2CC !important;
+}
 
+
+.about-us{
+    display: block;
+    width: 300px;
+    height: auto;
+    max-width: 400px;
+    margin: auto;
+}
+
+
+
+.click{
+    display: block;
+    text-align: center;
+    font-style: italic;
+    font-family: "Changa One", sans-serif;
+}
+
+.decor{
+    color: #EA5455;
+    font-family: "Playwrite AU VIC Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.de{
+    color:#2D4059;
+
+}
+
+.ge{
+    color: #2D4059;
+}
+
+.text{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+}
+
+.unlock{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 20px auto 10px;   
+    object-fit: contain; 
+}
+
+.card{
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+
+}
+
+.head-two{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-text{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: Inter;
+}
