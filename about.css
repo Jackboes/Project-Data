@@ -11,8 +11,6 @@ body{
     margin: auto;
 }
 
-
-
 .click{
     display: block;
     text-align: center;
@@ -40,8 +38,16 @@ body{
     font-family: "Changa One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 25px;
+    font-size: 32px;
     text-align: center;
+    margin-top: 20px;
+}
+
+.text-two{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 30px;
 }
 
 .unlock{
@@ -67,6 +73,66 @@ body{
 }
 
 .card-text{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: Inter;
+}
+
+.chat{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 20px auto 10px;   
+    object-fit: contain;
+}
+
+.card-text-two{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: Inter;
+}
+
+.head-three{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.book-half{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 20px auto 10px;
+    object-fit: contain;
+}
+
+.head-four{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-text-three{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: Inter;
+}
+
+.grad-hat{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 20px auto 16px;
+    object-fit: contain;
+}
+
+.head-five{
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-text-four{
     font-family: "Changa One", sans-serif;
     font-weight: 400;
     font-style: Inter;
