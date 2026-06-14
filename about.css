@@ -1,5 +1,5 @@
 body{
-    background-color: #FFF2CC !important;
+    background-color: #D6E6F2 !important;
 }
 
 
@@ -58,11 +58,12 @@ body{
     object-fit: contain; 
 }
 
-.card{
+div.card{
     text-align: center;
     border-radius: 20px;
     padding: 10px;
     border: 1px solid #e0e0e0;
+    background-color: #F7FBFC;
 
 }
 
@@ -169,4 +170,35 @@ body{
     font-style: Inter;
     font-size: 25px;
     padding-top: 80px;
+}
+
+.about-me-img{
+    flex: 1;
+    width: 100px;
+    height: auto;
+    margin-bottom: 0;
+    margin-right: -70px;
+    margin-top: -12px;
+    background-color: #D6E6F2;
+    
+}
+
+.about-me-text{
+    flex: 1;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: Inter;
+    font-size: 25px;
+    padding: 100px 100px;
+    margin-top: 0;
+}
+
+.devlop{
+    display: flex;
+    justify-content: center;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    
 }
