@@ -19,5 +19,48 @@
 }
 
 .carousel-item:nth-child(2) img {
+    object-fit: cover;
     object-position: center 25%;
+}
+
+.carousel-item:nth-child(3) img{
+    object-fit: cover;
+    object-position: center 15%;
+    
+}
+
+.carousel-item:nth-child(4) img{
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.navbar{
+    background-color: #FFD460 !important;
+}
+
+.container-one{
+    background-color: #FADA7A;
+}
+
+.deu{
+    color: #2D4059;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.lern{
+    color: #EA5455;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.carousel-caption h5{
+    font-family: "Lexend Zetta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1;
 }
