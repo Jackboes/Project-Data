@@ -64,3 +64,37 @@
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     line-height: 1;
 }
+
+.carousel-caption p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    line-height: 1;
+}
+
+.card-header{
+    background-color: #FFD460;
+
+}
+
+.card-header h4{
+    color: #2D4059;
+    font-family: "Changa One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+
+}
+
+.card-body{
+    background-color: #FFEBA8;
+}
+
+.list-unstyled{
+    color: #EA5455;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
