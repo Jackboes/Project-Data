@@ -109,6 +109,8 @@ h2{
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 19px;
+    color: #2D4059;
 }
 
 .lead{
@@ -136,4 +138,37 @@ h2{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+}
+
+.feature-bg{
+    background-color: #FFD460;
+    
+}
+
+.fw-normal-one{
+    color:#2D4059;
+}
+
+.btn-outline-custom{
+    --bs-btn-color:  #EA5455;
+    --bs-btn-border-color:  #EA5455;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg:  #EA5455;
+    --bs-btn-hover-border-color:  #EA5455;
+}
+
+.rounded-circle{
+    width: 100px;
+    height: 100px;
+}
+
+.book-image{
+    width: 100px;
+    height: 100px;
+    color: #2D4059;
+}
+
+.style-icon{
+    color: #EE7677;
+    font-size: 90px;
 }
