@@ -138,6 +138,7 @@ h2{
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+
 }
 
 .feature-bg{
@@ -171,4 +172,24 @@ h2{
 .style-icon{
     color: #EE7677;
     font-size: 90px;
+}
+
+.level-bg{
+    background-color: #FFD460;
+}
+
+.level-two{
+    background-color: #FADA7A;
+}
+
+.container-bg{
+    background-color: #818C9B;
+}
+
+.nav-style{
+    color: #EE7677 !important;
+}
+
+.price-bg{
+    background-color: #FADA7A;
 }
