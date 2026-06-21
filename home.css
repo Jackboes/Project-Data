@@ -35,22 +35,22 @@
 }
 
 .navbar{
-    background-color: #FFD460 !important;
+    background-color: #FBF6EF !important;
 }
 
 .container-one{
-    background-color: #FADA7A;
+    background-color: #FBF6EF;
 }
 
 .deu{
-    color: #2D4059;
+    color: #2B2A28;
     font-family: "Changa One", sans-serif;
     font-weight: 400;
     font-style: italic;
 }
 
 .lern{
-    color: #EA5455;
+    color: #E2574F;
     font-family: "Changa One", sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -74,12 +74,12 @@
 }
 
 .card-header{
-    background-color: #FFD460;
+    background-color: #FFFFFF;
 
 }
 
 .card-header h4{
-    color: #2D4059;
+    color: #2B2A28;
     font-family: "Changa One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -88,11 +88,11 @@
 }
 
 .card-body{
-    background-color: #FFEBA8;
+    background-color: #FFFFFF;
 }
 
 .list-unstyled{
-    color: #EA5455;
+    color: #E2574F;
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -110,7 +110,7 @@ h2{
     font-weight: 400;
     font-style: normal;
     font-size: 19px;
-    color: #2D4059;
+    color: #2B2A28;
 }
 
 .lead{
@@ -126,11 +126,11 @@ h2{
 }
 
 .navbar-toggler{
-    border: 2px solid #2D4059;
+    border: 2px solid #2B2A28;
 }
 
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0,0,0,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(43,42,40,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .text-decora{
@@ -142,20 +142,20 @@ h2{
 }
 
 .feature-bg{
-    background-color: #FFD460;
+    background-color: #FBF6EF;
     
 }
 
 .fw-normal-one{
-    color:#2D4059;
+    color:#2B2A28;
 }
 
 .btn-outline-custom{
-    --bs-btn-color:  #EA5455;
-    --bs-btn-border-color:  #EA5455;
+    --bs-btn-color:  #E2574F;
+    --bs-btn-border-color:  #E2574F;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg:  #EA5455;
-    --bs-btn-hover-border-color:  #EA5455;
+    --bs-btn-hover-bg:  #E2574F;
+    --bs-btn-hover-border-color:  #E2574F;
 }
 
 .rounded-circle{
@@ -166,30 +166,52 @@ h2{
 .book-image{
     width: 100px;
     height: 100px;
-    color: #2D4059;
+    color: #2B2A28;
 }
 
 .style-icon{
-    color: #EE7677;
+    color: #E2574F;
     font-size: 90px;
 }
 
 .level-bg{
-    background-color: #FFD460;
+    background-color: #D6E6F2;
 }
 
 .level-two{
-    background-color: #FADA7A;
+  background-color: #FFE5A0;
+}
+
+.card-body{
+   background-color: #FFEEBF;
+}
+
+.card-header{
+    background-color: #FFDD80;
 }
 
 .container-bg{
-    background-color: #818C9B;
+    background-color: #2B2A28;
 }
 
 .nav-style{
-    color: #EE7677 !important;
+    color: #E2574F !important;
 }
 
 .price-bg{
-    background-color: #FADA7A;
+    background-color: #FBF6EF;
+}
+
+
+.btn-outline-warning{
+    --bs-btn-color: #E8A33D;
+    --bs-btn-border-color: #E8A33D;
+    --bs-btn-hover-color: #2B2A28;
+    --bs-btn-hover-bg: #E8A33D;
+    --bs-btn-hover-border-color: #E8A33D;
+}
+
+
+.featurette-heading{
+    color: #2F6E5E;
 }
