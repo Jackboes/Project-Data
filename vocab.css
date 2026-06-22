@@ -41,3 +41,18 @@ nav{
     width: 40px;
     height: 40px;
 }
+
+.offcanvas-title{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.offcanvas-body, .offcanvas-header{
+    background-color: #FFE7CC;
+}
+
+.cover-style{
+    background-color: #FFEBCC;
+}
