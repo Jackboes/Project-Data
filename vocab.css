@@ -17,3 +17,27 @@ nav{
     font-style: normal;
     font-size: 20px;
 }
+
+.navbar-toggler{
+    border: 2px solid black;
+}
+
+.button-style{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.lead-button{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.style-icon{
+    color: black;
+    width: 40px;
+    height: 40px;
+}
