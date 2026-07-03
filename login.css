@@ -20,6 +20,14 @@ label{
     font-style: normal;
 }
 
+
+.btn-primary{
+  --bs-btn-bg: #FFD93D;
+  --bs-btn-border-color: #FFD93D;
+  --bs-btn-hover-bg: #2B2A28;
+  --bs-btn-hover-border-color: black;
+}
+
 .text-decora{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
