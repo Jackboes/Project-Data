@@ -32,3 +32,11 @@ input.form-control:focus{
     border-radius: 3px;
     box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5)
 }
+
+
+.btn-primary{
+  --bs-btn-bg: #FFD93D;
+  --bs-btn-border-color: #FFD93D;
+  --bs-btn-hover-bg: #2B2A28;
+  --bs-btn-hover-border-color: black;
+}
