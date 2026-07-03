@@ -1,3 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.cover-container {
+  min-height: 100vh;
+}
+
+.cover-style{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#3f87a6 10%, #ebf8e1a2 10%),
+  linear-gradient(to right, #ebf8e100 10%, #c73030 10% 10.2%, #ebf8e100 10.5%);
+  background-size: 100% 25px, 100% 100%;
+  background-repeat: repeat, no-repeat;
+}
+
 h3 ,h1{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
@@ -83,6 +101,7 @@ button {
   font-weight: 640;
   color: #fafaf6;
   letter-spacing: -0.06em;
+  overflow: hidden;
 }
 
 .button-item {
@@ -220,3 +239,29 @@ button {
   width: 100%;
 }
 
+.collapse{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.level-style{
+  display: block;
+  position: relative;
+}
+
+.level-style::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.level-style:hover::after{
+  width: 100%;
+}
