@@ -26,3 +26,9 @@ label{
     font-style: normal;
     font-size: 20px;
 }
+
+input.form-control:focus{
+  border: 2px solid #FFD93D !important;
+  border-radius: 3px;
+  box-shadow: 0 0 0 0.25rem #FFD93D !important;
+}
