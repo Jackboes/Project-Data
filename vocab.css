@@ -38,6 +38,7 @@ nav{
 
 .navbar-toggler{
     border: 2px solid black;
+    border-radius: 4px;
 }
 
 .button-style{
@@ -50,7 +51,7 @@ nav{
 
 .button-style:hover{
   
-  background-color: #FFD074;
+  background-color: #B1D3B9;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  
 
@@ -77,14 +78,14 @@ nav{
 }
 
 .offcanvas-body, .offcanvas-header{
-    background-color: #FFE7CC;
+    background-color: #E6F2DD;
 }
 
 .cover-style{
     background-color: #FFEBCC;
 }
 
-button {
+.button {
   all: unset;
 }
 
@@ -246,22 +247,28 @@ button {
     font-size: 18px;
 }
 
-.level-style{
+.custom-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.toggler-line {
   display: block;
-  position: relative;
-}
-
-.level-style::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #007bff;
-  transition: width 0.3s ease;
-}
-
-.level-style:hover::after{
   width: 100%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 1px;
+}
+
+.level-style:hover{
+  background-color: #B1D3B9;
+  border: 2px solid #B1D3B9;
+  border-radius: 8px;
+ 
 }
