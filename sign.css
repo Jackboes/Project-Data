@@ -66,9 +66,20 @@ body{
   background-size: calc(2 * var(--s)) var(--s);
 }
 
-.style-form{
-    border-radius: 20px;
-    overflow: hidden;  
-    box-shadow: 0 140px 180px rgba(0, 0, 0, 1);
-    
+.border-style {
+    position: relative;
+    display: inline-block;
 }
+
+.border-style::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;  
+    left: -22px;    
+    right: -22px;
+    z-index: -1;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
+}
+
