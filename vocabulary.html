@@ -22,12 +22,12 @@
 </head>
 <body>
 
-   <div class="cover-style cover-container d-flex w-100 h-100 p-3 pb-5 mx-auto flex-column">
+   <div class="cover-style cover-container d-flex w-100 h-100 p-3 pb-5 mx-auto flex-column" style="padding-top: 200px;">
         <header class="mb-auto"> 
             <div> 
                 <h3 class="float-md-start mt-3 ms-5">Wortschatz</h3> 
-                <button class="navbar-toggler" style="margin-top: 20px; margin-left: -220px" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"> 
-                    <span class="navbar-toggler-icon"></span> 
+                 <button class="navbar-toggler" style="margin-top: 20px; margin-left: -220px" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon toggle-line"></span>  
                 </button> 
                 <nav class="nav nav-masthead justify-content-center float-md-end"> 
                     <a class="nav-link py-3 px-2 active" aria-current="page" href="index.html" style="text-decoration: none;">Home</a> 
@@ -36,8 +36,9 @@
                 </nav> 
             </div> 
         </header> 
+    
 
-    <div class="container text-center" style="margin-top: 170px; margin-bottom: 170px;"> 
+        <div class="container text-center" style="margin-top: 170px; margin-bottom: 170px;"> 
             <h1>Wortschatz einfach gemacht.</h1> 
             <p class="lead">Take your vocabulary from Level 1 to Level 3, with interactive flashcards! </p> 
             <p class="lead" style="margin-top: -16px;">Practice made fun.</p> 
@@ -54,13 +55,10 @@
                     <span class="button-inner-hover">More</span>
                 </span>
             </button>
-    </div>
-
-        <footer class="mt-auto text-white-50"> 
-            <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://x.com/mdo" class="text-white">@mdo</a>.</p> 
-        </footer>
+        </div>
 
     </div>
+    
 
 
    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
@@ -82,18 +80,18 @@
             </button>
             <div class="collapse" id="home-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="margin-left: 54px;">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Personal Identity & Communication</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Relationships & Social Life</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Home & Living Environment</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Daily Routine & Time Management</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Leisure, Sports & Culture</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Food, Drink & Dining Out</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Public Spaces & Navigation</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Travel, Traffic & Mobility</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Professional Life & Education</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Nature, Weather & Environment</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Health, Body & Wellbeing</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Consumer Habits & Fashion</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Basic Communication</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Relationships</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Home & Living</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Daily Routine</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sports & Culture</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Food stuff</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Public Spaces</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Travel</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Professional Life</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Environment</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Body parts</a></li>
+                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Clothing</a></li>
                    
                    
                 </ul>
@@ -140,10 +138,9 @@
                 Account
             </button>
             <div class="collapse" id="account-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New...</a></li>
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="margin-left: 30px;">
+                    <li><a href="sign.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Create New</a></li>
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Settings</a></li>
                     <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a></li>
                 </ul>
             </div>
@@ -153,10 +150,6 @@
 
   </div>
 </div>
-
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
