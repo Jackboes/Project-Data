@@ -66,4 +66,44 @@ body{
     overflow: hidden;  
     box-shadow: 0 140px 180px rgba(0, 0, 0, 1);
     
+    
+}
+
+.border-style{
+    position: relative;
+    display: inline-block;
+}
+
+.border-style::before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;  
+    left: -22px;    
+    right: -22px;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.button-style{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.button-style::before{
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
+    border-radius: 5px;
+    z-index: 0;
+    filter: blur(6px);
+}
+
+.button-style button{
+    position: relative;
+    z-index: 1;
 }
