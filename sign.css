@@ -8,6 +8,7 @@
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    width: 100px;
 }
 
 .box{
@@ -31,6 +32,7 @@ input.form-control:focus{
     border: 2px solid #FFD93D !important;
     border-radius: 3px;
     box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5)
+
 }
 
 
@@ -81,5 +83,27 @@ body{
     z-index: -1;
     border-radius: 1rem;
     background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
+    filter: blur(20px);
 }
 
+.button-wrapper{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.button-wrapper::before{
+    content: '';
+    position: absolute;
+    inset: -3px;
+    z-index: 1;
+    border-radius: 5px;  
+    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
+    filter: blur(6px);
+}
+
+.button-wrapper button{
+    position: relative;      
+    z-index: 2; 
+   
+}
