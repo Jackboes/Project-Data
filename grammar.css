@@ -1,0 +1,88 @@
+.card{
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.2) translateY(-10px);
+    background-color: white;
+}
+
+
+
+.card-one{
+    position: relative;
+    border-radius: 30px;
+}
+
+.card-one::before{
+  content: '';
+  position: absolute;
+  inset: -6px;
+  background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);
+  z-index: -1;
+  border-radius: inherit;
+  filter: blur(20px);
+}
+
+.card-two{
+    position: relative;
+    border-radius: 30px;
+}
+
+.card-two::before{
+  content: '';
+  position: absolute;
+  inset: -6px;
+  background: linear-gradient(135deg, #F6D365 0%, #FDA085 100%);
+  z-index: -1;
+  border-radius: inherit;
+  filter: blur(20px);
+}
+
+
+.card-three{
+    position: relative;
+    border-radius: 30px;
+}
+
+.card-three::before{
+  content: '';
+  position: absolute;
+  inset: -6px;
+  background: linear-gradient(135deg, #84FAB0 0%, #8FD3F4 100%);
+  z-index: -1;
+  border-radius: inherit;
+  filter: blur(20px);
+}
+
+
+.card-four{
+    position: relative;
+    border-radius: 30px;
+}
+
+.card-four::before{
+  content: '';
+  position: absolute;
+  inset: -6px;
+  background: linear-gradient(135deg, #A1C4FD 0%, #C2E9FB 100%);
+  z-index: -1;
+  border-radius: inherit;
+  filter: blur(20px);
+}
+
+
+.card-five{
+    position: relative;
+    border-radius: 30px;
+}
+
+.card-five::before{
+  content: '';
+  position: absolute;
+  inset: -6px;
+  background: linear-gradient(135deg, #FFD269 0%, #FF7E5F 100%);
+  z-index: -1;
+  border-radius: inherit;
+  filter: blur(20px);
+}
