@@ -106,4 +106,15 @@ body{
 .button-style button{
     position: relative;
     z-index: 1;
+    background-color: #FFD93D;
+    color: white;
+}
+
+.btn-outline-custom{
+    --bs-btn-color:  #FFD93D;
+    --bs-btn-border-color:  #FFD93D;
+    --bs-btn-hover-border-color: #FFD93D;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  black;
+    --bs-btn-hover-border-color:  black;     
 }
