@@ -2,6 +2,10 @@
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
+    background-image: linear-gradient(43deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
+    -webkit-background-clip: text;
+    color: transparent;
+    
 }
 
 .but{
@@ -36,11 +40,14 @@ input.form-control:focus{
 }
 
 
-.btn-primary{
-  --bs-btn-bg: #FFD93D;
-  --bs-btn-border-color: #FFD93D;
-  --bs-btn-hover-bg: #2B2A28;
-  --bs-btn-hover-border-color: black;
+.btn-outline-custom{
+   --bs-btn-color:  #FFD93D;
+    --bs-btn-border-color:  #FFD93D;
+    --bs-btn-hover-border-color: #FFD93D;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  black;
+    --bs-btn-hover-border-color:  black;     ;
+  
 }
 
 
@@ -105,5 +112,8 @@ body{
 .button-wrapper button{
     position: relative;      
     z-index: 2; 
+    background-color: #FFD93D;
+    color: white;     
    
 }
+
