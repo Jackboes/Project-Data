@@ -3,7 +3,7 @@
 }
 
 .card:hover{
-    transform: scale(1.2) translateY(-10px);
+    transform: scale(1.1) translateY(-10px);
     background-color: white;
 }
 
@@ -85,4 +85,45 @@
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+}
+
+
+.heading-wrapper{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.button-style{
+  transition: all 0.3s ease;
+}
+
+.button-style:hover{
+  transform: scale(1) translateY(-10px);
+  background: conic-gradient(from 135deg,
+    #F6D365 0%,
+    #FBC687 18%,
+    #FDA085 36%,
+    #F76E6E 50%,
+    #FDA085 64%,
+    #FBC687 82%,
+    #F6D365 100%);
+  
+}
+
+.button-style-two{
+  transition: all 0.3s ease;
+}
+
+.button-style-two:hover{
+  transform: scale(0.9) translateY(-5px);
+  background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);
+}
+
+
+
+h1{
+  background-image: linear-gradient(43deg, #003049, #D62828, #F77F00, #FCBF49);
+   -webkit-background-clip: text;
+    color: transparent;
 }
