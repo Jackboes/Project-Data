@@ -250,3 +250,16 @@ body {
   border-radius: inherit;
   filter: blur(20px);
 }
+
+.nav-item{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.lead{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
