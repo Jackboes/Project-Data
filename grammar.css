@@ -96,18 +96,19 @@
 
 .button-style{
   transition: all 0.3s ease;
+  border-color: #EABDE6;
 }
 
 .button-style:hover{
   transform: scale(1) translateY(-10px);
   background: conic-gradient(from 135deg,
-    #F6D365 0%,
-    #FBC687 18%,
-    #FDA085 36%,
-    #F76E6E 50%,
-    #FDA085 64%,
-    #FBC687 82%,
-    #F6D365 100%);
+    #FFDBFD 0%,
+    #EFD4FF 18%,
+    #DCCBFF 36%,
+    #C9BEFF 50%,
+    #DCCBFF 64%,
+    #EFD4FF 82%,
+    #FFDBFD 100%);
   
 }
 
@@ -120,10 +121,47 @@
   background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);
 }
 
+h1 {
+   color: #E26EE5;
+}
 
+h3{
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-h1{
-  background-image: linear-gradient(43deg, #003049, #D62828, #F77F00, #FCBF49);
-   -webkit-background-clip: text;
-    color: transparent;
+h4{
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  background-color: #eeeef8;
+  background-image:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(99, 102, 241, 0.08) 0%,
+      transparent 60%
+    ),
+    linear-gradient(
+      rgba(99, 102, 241, 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(99, 102, 241, 0.07) 1px,
+      transparent 1px
+    );
+  background-size:
+    100% 100%,
+    60px 60px,
+    60px 60px;
+  background-position:
+    0 0,
+    -1px -1px,
+    -1px -1px;
+  min-height: 100vh;
 }
