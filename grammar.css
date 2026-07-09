@@ -1,5 +1,5 @@
 .card{
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .card:hover{
@@ -13,13 +13,31 @@
 }
 
 .card-one::before{
+  --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: linear-gradient(135deg, #D8B4FE 0%, #A78BFA 100%);
+  background: conic-gradient(from var(--angle), #D8B4FE 0%, #A78BFA 100%);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: 5s spin linear infinite;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+
+  to{
+    --angle: 360deg;
+  }
 }
 
 .card-two{
@@ -28,15 +46,32 @@
 }
 
 .card-two::before{
+  --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background:linear-gradient(135deg, #EADCF8 0%, #C084FC 100%);
+  background: conic-gradient(from var(--angle), #EADCF8 0%, #C084FC 100%);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: 5s spin linear infinite; /* here infinite is animation-iteration-count like how many times do u have to run the animation*/
 }
 
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+
+  to{
+    --angle: 360deg;
+  }
+}
 
 .card-three{
     position: relative;
@@ -44,15 +79,32 @@
 }
 
 .card-three::before{
+  --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: linear-gradient(135deg, #E9D5FF 0%, #C026D3 100%);
+  background: conic-gradient(from var(--angle), #E9D5FF 0%, #C026D3 100%);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: 5s spin linear infinite;
 }
 
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+
+  to{
+    --angle: 360deg;
+  }
+}
 
 .card-four{
     position: relative;
@@ -60,13 +112,31 @@
 }
 
 .card-four::before{
+  --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: linear-gradient(135deg, #DDD6FE 0%, #A5B4FC 100%);
+  background: conic-gradient(from var(--angle), #DDD6FE 0%, #A5B4FC 100%);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: 5s spin linear infinite;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+
+  to{
+    --angle: 360deg;
+  }
 }
 
 .heading-wrapper{
@@ -196,13 +266,31 @@ body {
 }
 
 .decoration-one::before{
+  --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: linear-gradient(135deg, #FF9A9E 0%, #FECFEF 100%);
+  background: conic-gradient(from var(--angle), #FF9A9E 0%, #FECFEF 100%);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: 5s spin linear infinite;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+
+  to{
+    --angle: 360deg;
+  }
 }
 
 
@@ -212,14 +300,34 @@ body {
 }
 
 .decoration-two::before{
+  --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: linear-gradient(135deg, #F6D365 0%, #FDA085 100%);
+  background: conic-gradient(from var(--angle), #F6D365 0%, #FDA085 100%);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: 5s spin linear infinite;
 }
+
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+
+  to{
+    --angle: 360deg;
+  }
+}
+
 
 .decoration-three{
   position: relative;
@@ -227,14 +335,33 @@ body {
 }
 
 .decoration-three::before{
+  --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: linear-gradient(135deg, #84FAB0 0%, #8FD3F4 100%);
+  background: conic-gradient(from var(--angle), #84FAB0 0%, #8FD3F4 100%);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: 5s spin linear infinite;
 }
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  from{
+    --angle: 0deg;
+  }
+
+  to{
+    --angle: 360deg;
+  }
+}
+
 
 .decoration-four{
   position: relative;
@@ -242,14 +369,33 @@ body {
 }
 
 .decoration-four::before{
+  --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: linear-gradient(135deg, #A1C4FD 0%, #C2E9FB 100%);
+  background: conic-gradient(from var(--angle), #A1C4FD 0%, #C2E9FB 100%);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: 5s spin linear infinite;
 }
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+
+  to{
+    --angle: 360deg;
+  }
+}
+
 
 .nav-item{
   font-family: "Lilita One", sans-serif;
@@ -263,3 +409,5 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+
