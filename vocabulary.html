@@ -22,135 +22,59 @@
 </head>
 <body>
 
-   <div class="cover-style cover-container d-flex w-100 h-100 p-3 pb-5 mx-auto flex-column" style="padding-top: 200px;">
-        <header class="mb-auto"> 
-            <div> 
-                <h3 class="float-md-start mt-3 ms-5">Wortschatz</h3> 
-                 <button class="navbar-toggler" style="margin-top: 20px; margin-left: -220px" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"> 
-                    <span class="navbar-toggler-icon toggle-line"></span>  
-                </button> 
-                <nav class="nav nav-masthead justify-content-center float-md-end"> 
-                    <a class="nav-link py-3 px-2 active" aria-current="page" href="index.html" style="text-decoration: none;">Home</a> 
-                    <a class="nav-link py-3 px-2" href="about.html" style="text-decoration: none;">About</a> 
-                    <a class="nav-link py-3 px-2" href="flashcards.html" style="text-decoration: none;">Flashcards</a> 
-                </nav> 
-            </div> 
-        </header> 
-    
-
-        <div class="container text-center" style="margin-top: 170px; margin-bottom: 170px;"> 
-            <h1>Wortschatz einfach gemacht.</h1> 
-            <p class="lead">Take your vocabulary from Level 1 to Level 3, with interactive flashcards! </p> 
-            <p class="lead" style="margin-top: -16px;">Practice made fun.</p> 
-           <button class="button button-item">
-                <span class="button-bg">
-                    <span class="button-bg-layers">
-                    <span class="button-bg-layer button-bg-layer-1 -purple"></span>
-                    <span class="button-bg-layer button-bg-layer-2 -turquoise"></span>
-                    <span class="button-bg-layer button-bg-layer-3 -yellow"></span>
-                    </span>
-                </span>
-                <span class="button-inner">
-                    <span class="button-inner-static">Learn</span>
-                    <span class="button-inner-hover">More</span>
-                </span>
-            </button>
+   <div class="d-flex justify-content-md-evenly align-items-md-center mt-5">
+        <div class="child">
+             <h1 style="margin-left: -180px;">Wortchartz</h1>
         </div>
 
+         <div class="child-two text-center">
+             <h1>Wortchartz einfach gemacht.</h1> 
+         </div>
+
+        <div class="button-wrapper d-flex gap-2" style="margin-right: -150px;">
+            <button type="button" class="btn btn-light button-style"style="background-color: #EABDE6;">Home</button>
+            <button type="button" class="btn btn-light button-style"style="background-color: #EABDE6;">Flashcards</button>
+            <button type="button" class="btn btn-light button-style"style="background-color: #EABDE6;">About</button>
+        </div>
     </div>
-    
 
 
-   <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasLabel">Wortschatz</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
 
-  <div class="offcanvas-body">
-    <div class="flex-shrink-0 p-3" style="width: 280px;">
-        <i class="bi bi-arrow-short-right"></i>
-    <ul class="list-unstyled ps-0">
-        <li class="mb-1">
-            <img src="../Vocab-icons/arrow-right-short.svg" alt="right-arrow-short-icon-image" class="style-icon">
-            <button class="button-style btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+    <div class="d-flex justify-content-md-evenly align-items-md-center border rounded-5 shadow mx-auto" style="width: 1200px; height:500px; margin-top: 50px;">
+
+        <div class="card style" style="width: 18rem;">
+            <img src="../Vocabulary-images/level-one-vocab.svg" class="card-img-top" alt="boy-girl-learnig-together-illustration">
+            <div class="card-body">
+                <h3 class="card-title text-center">Level 1</h3>
                
-                    Level 1
-            </button>
-            <div class="collapse" id="home-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="margin-left: 54px;">
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Basic Communication</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Relationships</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Home & Living</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Daily Routine</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sports & Culture</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Food stuff</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Public Spaces</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Travel</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Professional Life</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Environment</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Body parts</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Clothing</a></li>
-                   
-                   
-                </ul>
+                <!-- Method to center a button without using a div class for that-->
+                <button type="button" class="btn btn-light d-block mx-auto">Learn More</button>
             </div>
-        </li>
+        </div>
 
-        <li class="mb-1">
-            <img src="../Vocab-icons/arrow-right-short.svg" alt="right-arrow-short-icon-image" class="style-icon">
-            <button class="button-style btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                Level 2
-            </button>
-            <div class="collapse" id="dashboard-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="margin-left: 54px;">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Overview</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Weekly</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Monthly</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Annually</a></li>
-                </ul>
+        <div class="card style" style="width: 18rem;">
+            <img src="../Vocabulary-images/level-two-vocab.svg" class="card-img-top" alt="boy-learning-illustration">
+            <div class="card-body">
+                <h3 class="card-title text-center">Level 2</h3>
+               
+                <button type="button" class="btn btn-light d-block mx-auto">Learn More</button>
             </div>
-        </li>
+        </div>
 
-        <li class="mb-1">
-            <img src="../Vocab-icons/arrow-right-short.svg" alt="right-arrow-short-icon-image" class="style-icon">
-            <button class="button-style btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                Level 3
-            </button>
-            <div class="collapse" id="orders-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="margin-left: 54px;">
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">New</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Processed</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Shipped</a></li>
-                    <li><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Returned</a></li>
-                </ul>
+        <div class="card style" style="width: 18rem;">
+            <img src="../Vocabulary-images/level-three-vocab.svg" class="card-img-top" alt="girl-looking-at-pile-of-books-illustration">
+            <div class="card-body">
+                <h3 class="card-title text-center">Level 3</h3>
+               
+                <button type="button" class="btn btn-light d-block mx-auto">Learn More</button>
             </div>
-        </li>
+        </div>
 
-        <li class="border-top my-3"></li>
 
-        <li class="mb-1">
-            <button class="button-style btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                Account
-            </button>
-            <div class="collapse" id="account-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small" style="margin-left: 30px;">
-                    <li class="level-style"><a href="sign.html" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Create New</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Profile</a></li>
-                    <li class="level-style"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Sign out</a></li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-</div>
+    </div>
 
-  </div>
-</div>
 
+ 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
