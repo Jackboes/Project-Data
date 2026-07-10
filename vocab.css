@@ -3,18 +3,6 @@ html, body {
   margin: 0;
 }
 
-.cover-container {
-  min-height: 100vh;
-}
-
-.cover-style{
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(#3f87a6 10%, #ebf8e1a2 10%),
-  linear-gradient(to right, #ebf8e100 10%, #c73030 10% 10.2%, #ebf8e100 10.5%);
-  background-size: 100% 25px, 100% 100%;
-  background-repeat: repeat, no-repeat;
-}
 
 h3 ,h1{
     font-family: "Lilita One", sans-serif;
@@ -36,239 +24,39 @@ nav{
     font-size: 20px;
 }
 
-.navbar-toggler{
-    border: 2px solid black;
-    border-radius: 4px;
+
+.style{
+    border-radius: 30px;
 }
 
-.button-style{
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+.box-style{
+    position: relative;
 }
 
-.button-style:hover{
-  
-  background-color: #B1D3B9;
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  
-
+.box-style::before{
+    content: "";
+    position: absolute;
+    inset: -4px;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
+    z-index: -1;
+    border-radius: inherit;
+    filter: blur(20px);
 }
 
-.lead-button{
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-}
 
-.style-icon{
-    color: black;
-    width: 40px;
-    height: 40px;
-}
-
-.offcanvas-title{
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-}
-
-.offcanvas-body, .offcanvas-header{
-    background-color: #E6F2DD;
-}
-
-.cover-style{
-    background-color: #FFEBCC;
-}
-
-.button {
-  all: unset;
-}
-
-.button {
-  position: relative;
-  display: inline-flex;
-  height: 3.5rem;
-  align-items: center;
-  border-radius: 9999px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  font-family: Segoe UI;
-  font-size: 1.2rem;
-  font-weight: 640;
-  color: #fafaf6;
-  letter-spacing: -0.06em;
-  overflow: hidden;
-}
-
-.button-item {
-  background-color: transparent;
-  color: #1d1d1f;
-}
-
-.button-item .button-bg {
-  border-color: rgba(255, 208, 116);
-  background-color: rgba(255, 208, 116);
-}
-
-.button-inner,
-.button-inner-hover,
-.button-inner-static {
-  pointer-events: none;
-  display: block;
-}
-
-.button-inner {
-  position: relative;
-}
-
-.button-inner-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transform: translateY(70%);
-}
-
-.button-bg {
-  overflow: hidden;
-  border-radius: 2rem;
-  position: absolute;
-  top: 0;
-  left: 0;
+body {
   width: 100%;
   height: 100%;
-  transform: scale(1);
-  transition: transform 1.8s cubic-bezier(0.19, 1, 0.22, 1);
-}
+  --size: 80px;
+  --color1: #c8b6ff;
+  --color2: #b8f2e6;
+  --color3: #ffd6ff;
+  --cone: #6d597a;
 
-.button-bg,
-.button-bg-layer,
-.button-bg-layers {
-  display: block;
-}
-
-.button-bg-layers {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: -60%;
-  aspect-ratio: 1 / 1;
-  width: max(200%, 10rem);
-}
-
-.button-bg-layer {
-  border-radius: 9999px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: scale(0);
-}
-
-.button-bg-layer.-purple {
-  background-color: rgba(163, 116, 255);
-}
-
-.button-bg-layer.-turquoise {
-  background-color: rgba(23, 241, 209);
-}
-
-.button-bg-layer.-yellow {
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 208, 116, var(--tw-bg-opacity));
-}
-
-.button:hover .button-inner-static {
-  opacity: 0;
-  transform: translateY(-70%);
-  transition:
-    transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
-    opacity 0.3s linear;
-}
-
-.button:hover .button-inner-hover {
-  opacity: 1;
-  transform: translateY(0);
-  transition:
-    transform 1.4s cubic-bezier(0.19, 1, 0.22, 1),
-    opacity 1.4s cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.button:hover .button-bg-layer {
-    transition:
-    transform 1.3s cubic-bezier(0.19, 1, 0.22, 1),
-    opacity 0.3s linear;
-}
-
-.button:hover .button-bg-layer-1 {
-  transform: scale(1);
-}
-
-.button:hover .button-bg-layer-2 {
-  transition-delay: 0.1s;
-  transform: scale(1);
-}
-
-.button:hover .button-bg-layer-3 {
-  transition-delay: 0.2s;
-  transform: scale(1);
-}
-
-.nav-link{
-  display: inline-block;
-  position: relative;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #007bff;
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-.collapse{
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-}
-
-.custom-toggler {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 24px;
-  height: 18px;
-  padding: 0;
-  border: none;
-  background: transparent;
-}
-
-.toggler-line {
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-  border-radius: 1px;
-}
-
-.level-style:hover{
-  background-color: #B1D3B9;
-  border: 2px solid #B1D3B9;
-  border-radius: 8px;
- 
+  background: radial-gradient(circle at 50% 30%, transparent 30%, var(--color1) 31%),
+    radial-gradient(circle at 30% 70%, transparent 30%, var(--color2) 31%),
+    radial-gradient(circle at 70% 70%, transparent 30%, var(--color3) 31%),
+    linear-gradient(to bottom, var(--cone) 50%, transparent 50%);
+  background-size: var(--size) var(--size);
 }
