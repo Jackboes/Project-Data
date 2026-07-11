@@ -27,8 +27,16 @@ nav{
 
 .style{
     border-radius: 30px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
 }
 
+.style:hover{
+    transform: scale(1.1);
+    
+}
+
+/* Now here we basically made the hover fo the cards more smooth by applying transition on transform  */
 
 .box-style{
     position: relative;
