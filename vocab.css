@@ -11,6 +11,23 @@ h3 ,h1{
     font-size: 35px;
 }
 
+
+.nav-link{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.lead-footer{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
 .lead{
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
