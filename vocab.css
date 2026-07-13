@@ -17,14 +17,6 @@ h3 ,h1{
     font-style: normal;
 }
 
-nav{
-    font-family: "Lilita One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-}
-
-
 .box-style{
     position: relative;
 }
@@ -47,14 +39,36 @@ nav{
 }
 
 .wrapper-one::before{
+    --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background:linear-gradient(135deg, #ff9a9e, #fecfef, #ffd452, #f6a623);
+  background: conic-gradient(from var(--angle), #ff9a9e, #fecfef, #ffd452, #f6a623);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: fadeIn 5s linear infinite;
 }
+
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+@keyframes fadeIn{
+      0%,100%  {               
+        opacity: 0.1;
+    }
+
+    50%{
+        opacity: 1;
+    }
+}
+/* Now here 0 and 100% means that at the start and end of the animation the opacity is the same and when it reaches 50% it becomes less transparent opacity menas transparent - ness */
+
 
 .wrapper-two{
     position: relative;
@@ -63,14 +77,33 @@ nav{
 }
 
 .wrapper-two::before{
+    --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: linear-gradient(135deg, #84fab0, #8fd3f4, #a78bfa, #c9a0ff);
+  background: conic-gradient(from var(--angle), #84fab0, #8fd3f4, #a78bfa, #c9a0ff);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: fadeIn 5s linear infinite;
 }
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes fadeIn{
+    0%,100%{
+        opacity: 0.2;
+    }
+
+    50%{
+        opacity: 1;
+    }
+}
+
 
 .wrapper-three{
     position: relative;
@@ -79,13 +112,31 @@ nav{
 }
 
 .wrapper-three::before{
+  --angle:0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: linear-gradient(135deg, #fbc2eb, #ffd452, #a1c4fd, #c2e9fb);
+  background: conic-gradient(from var(--angle), #fbc2eb, #ffd452, #a1c4fd, #c2e9fb);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
+  animation: fadeIn 5s linear infinite;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes fadeIn{
+    0%,100%{
+        opacity: 0.2;
+    }
+
+    50%{
+        opacity: 1;
+    }
 }
 
 
@@ -165,3 +216,4 @@ body {
     #FFDBFD 100%);
 
 }
+
