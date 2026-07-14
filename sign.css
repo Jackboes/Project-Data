@@ -46,7 +46,7 @@ input.form-control:focus{
     --bs-btn-hover-border-color: #FFD93D;
     --bs-btn-hover-color: white;
     --bs-btn-hover-bg:  black;
-    --bs-btn-hover-border-color:  black;     ;
+    --bs-btn-hover-border-color:  black;     
   
 }
 
@@ -58,7 +58,6 @@ body{
     --c1: #dadee1;
     --c2: #4a99b4;
     --c3: #9cceb5;
-
     --_c: 75%, var(--c3) 52.72deg, #0000 0;
     --_g1: conic-gradient(from -116.36deg at 25% var(--_c));
     --_g2: conic-gradient(from 63.43deg at 75% var(--_c));
@@ -81,6 +80,7 @@ body{
 }
 
 .border-style::before {
+    --angle: 0deg;
     content: '';
     position: absolute;
     top: -10px;
@@ -89,9 +89,30 @@ body{
     right: -22px;
     z-index: -1;
     border-radius: 1rem;
-    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
+    background: conic-gradient(from var(--angle), #ff5f6d, #ffc371, #47cf73, #2193b0);
     filter: blur(20px);
+    animation: fadeIn 5s linear infinite;
+    /* Now to increase the speed of the anmiation decease the duartion value that is decrease 6s and to make it slow increase 6s to make it slow */
 }
+
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes fadeIn{
+    0%, 100%{
+        opacity: 0.2;
+    }
+
+    50%{
+        opacity: 1;
+    }
+}
+
+
 
 .button-wrapper{
     position: relative;
