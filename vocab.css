@@ -1,347 +1,255 @@
-/* ===== Shared angle property & spin animation (declared once) ===== */
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
-@keyframes spin {
-  from { --angle: 0deg; }
-  to   { --angle: 360deg; }
+
+h3 ,h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
 }
 
-@keyframes slide-top {
-  0%   { transform: translateY(0); }
-  100% { transform: translateY(-100px); }
+
+.nav-link{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
 }
 
-/* ===== Card base + scroll-reveal state ===== */
-.card {
-  transition: transform 0.3s ease-in-out;
-  border-radius: inherit; /* was "inhert" - typo fixed */
-  
+.lead-footer{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 10px;
 }
 
-.card:hover {
-  transform: scale(1.1) translateY(-10px);
-  background-color: white;
+
+.lead{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-/* ===== A2 level cards (glow border effect) ===== */
-.card-one,
-.card-two,
-.card-three,
-.card-four {
-  position: relative;
-  border-radius: 30px;
+.box-style{
+    position: relative;
 }
 
-.card-one::before {
-  --angle: 0deg;
+.box-style::before{
+    --angle: 0deg;
+    content: "";
+    position: absolute;
+    inset: -4px;
+    background: conic-gradient(from var(--angle), #ff5f6d, #ffc371, #47cf73, #2193b0);
+    z-index: -1;
+    border-radius: inherit;
+    filter: blur(20px);
+    animation: fadeIn 5s linear infinite;
+}
+
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes fadeIn{
+    0%, 100%{
+        opacity: 0.2;
+    }
+
+    50%{
+        opacity: 1;
+    }
+}
+
+
+.wrapper-one{
+    position: relative;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.wrapper-one::before{
+    --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: conic-gradient(from var(--angle), #D8B4FE 0%, #A78BFA 100%);
+  background: conic-gradient(from var(--angle), #ff9a9e, #fecfef, #ffd452, #f6a623);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
-  animation: 5s spin linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 
-.card-one.active{
--webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-}
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 
 
-.card-two::before {
-  --angle: 0deg;
+@keyframes spin{
+      from {               
+        --angle: 0deg;
+    }
+
+    to{
+        --angle: 360deg;
+    }
+}
+/* Now here 0 and 100% means that at the start and end of the animation the opacity is the same and when it reaches 50% it becomes less transparent opacity menas transparent - ness */
+
+
+.wrapper-two{
+    position: relative;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+.wrapper-two::before{
+    --angle: 0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: conic-gradient(from var(--angle), #EADCF8 0%, #C084FC 100%);
+  background: conic-gradient(from var(--angle), #84fab0, #8fd3f4, #a78bfa, #c9a0ff);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
-  animation: 5s spin linear infinite;
+  animation: spin 5s linear infinite;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+
+    to{
+        --angle: 360deg;
+    }
 }
 
 
-.card-two.active{
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.wrapper-three{
+    position: relative;
+    border-radius: 30px;
+    z-index: 1;
 }
 
-
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-}
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-}
-
-
-.card-three::before {
-  --angle: 0deg;
+.wrapper-three::before{
+  --angle:0deg;
   content: '';
   position: absolute;
   inset: -6px;
-  background: conic-gradient(from var(--angle), #E9D5FF 0%, #C026D3 100%);
+  background: conic-gradient(from var(--angle), #fbc2eb, #ffd452, #a1c4fd, #c2e9fb);
   z-index: -1;
   border-radius: inherit;
   filter: blur(20px);
-  animation: 5s spin linear infinite;
+  animation: spin 5s linear infinite;
 }
 
-.card-three.active{
-   -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
 }
 
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
 
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-}
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
+    to{
+        --angle: 360deg;
+    }
 }
 
 
-.card-four::before {
-  --angle: 0deg;
-  content: '';
-  position: absolute;
-  inset: -6px;
-  background: conic-gradient(from var(--angle), #DDD6FE 0%, #A5B4FC 100%);
-  z-index: -1;
-  border-radius: inherit;
-  filter: blur(20px);
-  animation: 5s spin linear infinite;
+.card{
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    border-radius: inherit;
+}
+.card:hover{
+    transform: scale(1.1);
+    
+}
+/* Now here we basically made the hover fo the cards more smooth by applying transition on transform  */
+
+body {
+  width: 100%;
+  height: 100%;
+  --size: 80px;
+  --color1: #c8b6ff;
+  --color2: #b8f2e6;
+  --color3: #ffd6ff;
+  --cone: #6d597a;
+
+  background: radial-gradient(circle at 50% 30%, transparent 30%, var(--color1) 31%),
+    radial-gradient(circle at 30% 70%, transparent 30%, var(--color2) 31%),
+    radial-gradient(circle at 70% 70%, transparent 30%, var(--color3) 31%),
+    linear-gradient(to bottom, var(--cone) 50%, transparent 50%);
+  background-size: var(--size) var(--size);
+}
+
+.button-style-one{
+    transition: all 0.3s ease;
+}
+
+.button-style-one:hover{
+    transform: scale(0.9) translateY(-7px);
+    background: linear-gradient(135deg, #ff9a9e, #fecfef, #ffd452, #f6a623);
 }
 
 
-.card-four.active{
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.button-style-two{
+    transition: all 0.3s ease;
+}
+
+.button-style-two:hover{
+    transform: scale(0.9) translateY(-7px);
+    background: linear-gradient(135deg, #84fab0, #8fd3f4, #a78bfa, #c9a0ff);
 }
 
 
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-}
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
+.button-style-three{
+    transition: all 0.3s ease;
 }
 
-/* ===== A1 level decoration cards (same glow effect) ===== */
-.decoration-one,
-.decoration-two,
-.decoration-three,
-.decoration-four {
-  position: relative;
-  border-radius: 24px;
+.button-style-three:hover{
+    transform: scale(0.9) translateY(-7px);
+    background: linear-gradient(135deg, #fbc2eb, #ffd452, #a1c4fd, #c2e9fb);
 }
 
-.decoration-one::before {
-  --angle: 0deg;
-  content: '';
-  position: absolute;
-  inset: -6px;
-  background: conic-gradient(from var(--angle), #FF9A9E 0%, #FECFEF 100%);
-  z-index: -1;
-  border-radius: inherit;
-  filter: blur(20px);
-  animation: 5s spin linear infinite;
+.button-style{
+    transition: all 0.3s ease;
+    border-color: #EABDE6;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.decoration-two::before {
-  --angle: 0deg;
-  content: '';
-  position: absolute;
-  inset: -6px;
-  background: conic-gradient(from var(--angle), #F6D365 0%, #FDA085 100%);
-  z-index: -1;
-  border-radius: inherit;
-  filter: blur(20px);
-  animation: 5s spin linear infinite;
+.button-style:hover{
+    transform: scale(1.1) translateY(-7px);
+    background: linear-gradinet(135deg,
+    #FFDBFD 0%,
+    #EFD4FF 18%,
+    #DCCBFF 36%,
+    #C9BEFF 50%,
+    #DCCBFF 64%,
+    #EFD4FF 82%,
+    #FFDBFD 100%);
+
 }
 
-.decoration-three::before {
-  --angle: 0deg;
-  content: '';
-  position: absolute;
-  inset: -6px;
-  background: conic-gradient(from var(--angle), #84FAB0 0%, #8FD3F4 100%);
-  z-index: -1;
-  border-radius: inherit;
-  filter: blur(20px);
-  animation: 5s spin linear infinite;
-}
-
-.decoration-four::before {
-  --angle: 0deg;
-  content: '';
-  position: absolute;
-  inset: -6px;
-  background: conic-gradient(from var(--angle), #A1C4FD 0%, #C2E9FB 100%);
-  z-index: -1;
-  border-radius: inherit;
-  filter: blur(20px);
-  animation: 5s spin linear infinite;
-}
-
-/* ===== Scroll-reveal heading ===== */
-.head-wrapper-level {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-.head-wrapper-level.active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.8s ease;
-  animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.heading-wrapper,
-.nav-item,
-.lead {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.nav-item {
-  font-size: 17px;
-}
-
-h1 {
-  color: #E26EE5;
-}
-
-h3 {
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  filter: drop-shadow(2px 4px 15px rgba(120, 90, 200, 0.25));
-}
-
-h4 {
-  font-family: "Nunito Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
-/* ===== Buttons ===== */
-.button-style {
-  transition: all 0.3s ease;
-  border-color: #EABDE6;
-}
-
-.button-style:hover {
-  transform: scale(1) translateY(-10px);
-  background: conic-gradient(from 135deg,
-    #FFDBFD 0%, #EFD4FF 18%, #DCCBFF 36%,
-    #C9BEFF 50%, #DCCBFF 64%, #EFD4FF 82%, #FFDBFD 100%);
-}
-
-.button-style-two {
-  transition: all 0.3s ease;
-}
-
-.button-style-two:hover {
-  transform: scale(0.9) translateY(-5px);
-  background: linear-gradient(135deg,
-    #FFDBFD 0%, #EFD4FF 18%, #DCCBFF 36%,
-    #C9BEFF 50%, #DCCBFF 64%, #EFD4FF 82%, #FFDBFD 100%);
-}
-
-/* ===== Backgrounds ===== */
-body,
-.card-collection {
-  background-color: #eeeef8;
-  background-image:
-    radial-gradient(ellipse at 50% 0%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
-    linear-gradient(rgba(99, 102, 241, 0.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99, 102, 241, 0.07) 1px, transparent 1px);
-  background-size: 100% 100%, 60px 60px, 60px 60px;
-  background-position: 0 0, -1px -1px, -1px -1px;
-  min-height: 100vh;
-}
-
-.card-collection {
-  border-radius: 24px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-  padding: 24px 14px;
-  width: 1200px;
-  height: 500px;
-  margin: auto;
-}
