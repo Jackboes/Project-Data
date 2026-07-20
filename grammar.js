@@ -30,75 +30,22 @@ window.addEventListener("scroll", function(){
 });
 
 
-const cardAnimate = document.querySelector(".card");
+// Here all reveal-wrapper class are stored inside an array called wrappers.
+const wrappers = document.querySelectorAll(".reveal-wrapper");
 
-window.addEventListener("scroll",function(){
-    const scrollValue = window.screenY;
-
-    if(scrollValue > 300){
-        cardAnimate.classList.add("active")
-    }
-
-    else{
-        cardAnimate.classList.remove("active");
-    }
+window.addEventListener("scroll", function() {
+    const scrollValue = window.scrollY;
+    
+// Here forEach basically acts as a for loop through which we can go through all the elements of the array inside wrappers.
+// Now here wrapper is simply a paramter which tells JS that he has add the class .active inside the desired div class and can move to the next class.
+// We always write a parameter to the call back when we are using forEach only if we want to modify or add or change the elements if the array then in that case its mandatory. 
+    wrappers.forEach(function(wrapper) {
+        if (scrollValue > 200) {
+            wrapper.classList.add('active');
+        } else {
+            wrapper.classList.remove("active");
+        }
+    });
 });
 
 
-const cardOne = document.querySelector(".card-one");
-
-window.addEventListener("scroll", function(){
-    const scrollValue = window.scrollY;
-
-    if(scrollValue > 200){
-        cardOne.classList.add("active");
-    }
-
-    else{
-        cardOne.classList.remove("active");
-    }
-}
-);
-
-
-const cardTwo = document.querySelector(".card-two");
-
-window.addEventListener("scroll",function(){
-    const scrollValue = window.scrollY;
-
-    if(scrollValue > 200){
-        cardTwo.classList.add("active");
-    }
-
-    else{
-        cardTwo.classList.remove("active");
-    }
-});
-
-const cardThree = document.querySelector(".card-three");
-
-window.addEventListener("scroll",function(){
-    const scrollValue = window.scrollY;
-
-    if(scrollValue > 200){
-        cardThree.classList.add("active");
-    }
-
-    else{
-        cardThree.classList.remove("active");
-    }
-});
-
-const cardFour = document.querySelector(".card-four");
-
-window.addEventListener("scroll",function(){
-    const scrollValue = window.scrollY;
-
-    if(scrollValue > 200){
-        cardFour.classList.add("active");
-    }
-
-    else{
-        cardFour.classList.remove("active");
-    }
-});
