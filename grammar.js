@@ -1,22 +1,17 @@
-var topButtons = document.querySelectorAll(".button-top");
+$(".button-top").click(function(){
 
-
-for(var i = 0; i< topButtons.length; i++){
-    topButtons[i].addEventListener("click",function(){
-        if(this.innerHTML == "Home"){
+    if(this.innerHTML == "Home"){
             window.location.href = "../HTML files/index.html";
         }
-
-        else if(this.innerHTML == "Quiz"){
+    else if(this.innerHTML == "Quiz"){
             window.location.href = "quiz.html";
         }
 
-        else{
-            window.location.href = "../HTML files/about.html";
-        }
-    });
-}
+    else if(this.innerHTML == "About"){
+        window.location.href = "../HTML files/about.html";
+    }
 
+});
 
 const headAnimate = document.querySelector(".head-wrapper-level");
 
