@@ -18,7 +18,7 @@ const headAnimate = document.querySelector(".head-wrapper-level");
 window.addEventListener("scroll", function(){
     const scrollValue = window.scrollY;
 // Here Scroll y mean I am scroll up and down that is vertical scroll and scroll X means horizontal but we neve use scroll X unless our webpage is greater thatn our browser window
-    if(scrollValue > 250){
+    if(scrollValue > 120){
         headAnimate.classList.add("active");
     }
 
@@ -40,7 +40,7 @@ window.addEventListener("scroll", function() {
 // Now here wrapper is simply a paramter which tells JS that he has add the class .active inside the desired div class and can move to the next class.
 // We always write a parameter to the call back when we are using forEach only if we want to modify or add or change the elements if the array then in that case its mandatory. 
     wrappers.forEach(function(wrapper) {
-        if (scrollValue > 200) {
+        if (scrollValue > 120) {
             wrapper.classList.add('active');
         } else {
             wrapper.classList.remove("active");
