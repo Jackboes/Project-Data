@@ -271,3 +271,37 @@ body,
   }
 }
 
+.new-wrapper.active{
+	-webkit-animation: flip-in-hor-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: flip-in-hor-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes flip-in-hor-top {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+/* Now here a negative value of rotate means that here the card is at the bottom initially */
+/* To see the flip animation more effectily from bottom to top we simpley increase the value of X the -ve value */
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+/* And here it means after +ve value of X the card flips top */
+/* Here if we increase +ve it means the element would go up more i.e to the top */
+    opacity: 1;
+  }
+}
+@keyframes flip-in-hor-top {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
