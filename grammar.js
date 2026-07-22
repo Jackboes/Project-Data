@@ -49,3 +49,21 @@ window.addEventListener("scroll", function() {
 });
 
 
+const cardAnime = document.querySelectorAll(".new-wrapper");
+
+window.addEventListener("load",function(){
+    
+    cardAnime.forEach(function(contain){
+        contain.classList.add("active");
+    });
+});
+    
+
+
+
+
+// window.addEventListener("load",function(){
+//     const cardAnime = document.querySelector(".new-wrapper");
+//     cardAnime.classList.add("active");
+// });
+
