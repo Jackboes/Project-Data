@@ -1,140 +1,230 @@
-.wel{
+h1{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: linear-gradient(43deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
-    -webkit-background-clip: text;
-    color: transparent;
+    text-align: center;
+}
+
+body{
+  /* From Uiverse.io by csemszepp */ 
+  width: 100%;
+  height: 100%;
+  --s: 37px; /* control the size */
+
+  --c: #0000, #2fb8ac 0.5deg 119.5deg, #0000 120deg;
+  --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+  --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+  --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+  background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+    var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+    var(--g3) 0 calc(1.73 * var(--s)) #ecbe13;
+  background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+}
+
+
+
+
+
+.form-control-two.active{
+	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
+.wrapper-border-style{
+  display: block;
+  position: relative;
+}
+
+.wrapper-border-style::before{
+  --angle: 0deg;
+  content: "";
+  position: absolute;
+  inset: -3px;
+  /* Vivid teal → aqua → yellow → orange */
+  background: conic-gradient(from var(--angle), #00D4C8 0%, #5CF2E8 33%, #FFEB3B 66%, #FFB627 100%);
+  border-radius: 5px;
+  z-index: -1;
+  filter: blur(36px);
+  animation: spin 7.5s linear infinite;
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+  
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+
+  to{
+    --angle: 360deg;
+  }
+
+/* 
+  to{
+    --angle: 0deg;
+  }
+
+  from{
+    --angle: 360deg;
+  } 
     
+  Now this means that the animation would go from right to left 
+  And the uncommented animations goes from left to right 
+*/
 }
 
-.but{
+.image-style.active{
+	-webkit-animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+/* .style-text.active{
+  -webkit-animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+} */
+
+.btn-outline-custom{
+    --bs-btn-color:  #FFD93D;
+    --bs-btn-border-color:  #FFD93D;
+    --bs-btn-hover-border-color: #FFD93D;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  black;
+    --bs-btn-hover-border-color:  black;     
+}
+
+.button-style{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    width: 100px;
-}
-
-.box{
+    position: relative;
+    z-index: 1;
     background-color: #FFD93D;
-}
-
-label{
-    font-family: "Nunito Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    color: white;
 }
 
 .text-decora{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-input.form-control:focus{
-    border: 2px solid #FFD93D !important;
-    border-radius: 3px;
-    box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5)
-
+.nav-link{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
 }
-
-
-.btn-outline-custom{
-   --bs-btn-color:  #FFD93D;
-    --bs-btn-border-color:  #FFD93D;
-    --bs-btn-hover-border-color: #FFD93D;
-    --bs-btn-hover-color: white;
-    --bs-btn-hover-bg:  black;
-    --bs-btn-hover-border-color:  black;     
-  
-}
-
-
-body{
-    width: 100%;
-    height: 100%;
-    --s: 65px; 
-    --c1: #dadee1;
-    --c2: #4a99b4;
-    --c3: #9cceb5;
-    --_c: 75%, var(--c3) 52.72deg, #0000 0;
-    --_g1: conic-gradient(from -116.36deg at 25% var(--_c));
-    --_g2: conic-gradient(from 63.43deg at 75% var(--_c));
-    background: var(--_g1), var(--_g1) calc(3 * var(--s)) calc(var(--s) / 2),
-    var(--_g2), var(--_g2) calc(3 * var(--s)) calc(var(--s) / 2),
-    conic-gradient(
-    var(--c2) 63.43deg,
-    var(--c1) 0 116.36deg,
-    var(--c2) 0 180deg,
-    var(--c1) 0 243.43deg,
-    var(--c2) 0 296.15deg,
-    var(--c1) 0
-    );
-  background-size: calc(2 * var(--s)) var(--s);
-}
-
-.border-style {
-    position: relative;
-    display: inline-block;
-}
-
-.border-style::before {
-    --angle: 0deg;
-    content: '';
-    position: absolute;
-    top: -10px;
-    bottom: -10px;  
-    left: -22px;    
-    right: -22px;
-    z-index: -1;
-    border-radius: 1rem;
-    background: conic-gradient(from var(--angle), #ff5f6d, #ffc371, #47cf73, #2193b0);
-    filter: blur(20px);
-    animation: fadeIn 5s linear infinite;
-    /* Now to increase the speed of the anmiation decease the duartion value that is decrease 6s and to make it slow increase 6s to make it slow */
-}
-
-
-@property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-
-@keyframes fadeIn{
-    0%, 100%{
-        opacity: 0.2;
-    }
-
-    50%{
-        opacity: 1;
-    }
-}
-
-
-
-.button-wrapper{
-    position: relative;
-    display: block;
-    width: 100%;
-}
-
-.button-wrapper::before{
-    content: '';
-    position: absolute;
-    inset: -3px;
-    z-index: 1;
-    border-radius: 5px;  
-    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
-    filter: blur(6px);
-}
-
-.button-wrapper button{
-    position: relative;      
-    z-index: 2; 
-    background-color: #FFD93D;
-    color: white;     
-   
-}
-
