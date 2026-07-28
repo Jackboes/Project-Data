@@ -215,3 +215,41 @@ h2{
 .featurette-heading{
     color: #2F6E5E;
 }
+
+.style-box{
+    width: 1500px; 
+    height: 550px; 
+    margin-top: 50px; 
+    background-color: white;
+    overflow: hidden;
+    margin-top: 110px;
+    /* padding: 2rem 1rem;    
+    gap: 1.5rem;    */
+}
+
+.card{
+    border-radius: 24px;
+    overflow: hidden;    
+}
+
+h2{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-title{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-text{
+  font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn{
+    border-radius: 24px;
+}
