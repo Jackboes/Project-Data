@@ -269,6 +269,33 @@ h2{
     font-style: normal;
 }
 
+.image-container{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    
+    
+}
+
+.fit-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+
+/* object fit contain basically shrinks the image and object fit cover fills the image completely inside the box */
+}
+
+.price-text{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.price-style{
+    width: 500px;
+    height: 400px;
+}
+
 
 
 
