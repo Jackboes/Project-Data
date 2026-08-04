@@ -69,3 +69,45 @@ window.addEventListener("scroll",function(){
         }
     });
 });
+
+
+const stepWorkText = document.querySelector(".text-step-style");
+
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+    const textPosition = stepWorkText.offsetTop - window.innerHeight + 95;
+    if(scrollValue>textPosition){
+        stepWorkText.classList.add("active");
+    }
+    else{
+        stepWorkText.classList.remove("active");
+    }
+});
+
+ const stepCard = document.querySelector(".step-card");
+
+ window.addEventListener("scroll",function(){
+     const scrollValue = window.scrollY;
+     const stepCardPosition = stepCard.offsetTop - window.innerHeight + 100;
+
+     if(scrollValue>stepCardPosition){
+         stepCard.classList.add("active");
+     }
+     else{
+         stepCard.classList.remove("active");
+     }
+ });
+
+const stepCardLeft = document.querySelector(".step-card-left");
+
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+    const stepCardLeftPosition = stepCardLeft.offsetTop - window.innerHeight + 180;
+
+    if(scrollY>stepCardLeftPosition){
+        stepCardLeft.classList.add("active");
+    }
+    else{
+        stepCardLeft.classList.add("active");
+    }
+});
