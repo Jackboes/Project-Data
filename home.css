@@ -182,9 +182,9 @@ h2{
   background-color: #FFE5A0;
 }
 
-.card-body{
+/* .card-body{
    background-color: #FFEEBF;
-}
+} */
 
 .card-header{
     background-color: #FFDD80;
@@ -217,15 +217,16 @@ h2{
 }
 
 .style-box{
-    width: 1500px; 
-    height: 550px; 
+    /* width: 1500px; 
+    height: 550px;  */
     margin-top: 50px; 
     background-color: white;
-    overflow: hidden;
-    margin-top: 110px;
+    /* overflow: hidden; */
+    margin-top: 150px;
     /* padding: 2rem 1rem;    
     gap: 1.5rem;    */
 }
+
 
 .card{
     border-radius: 24px;
@@ -245,7 +246,7 @@ h2{
 }
 
 .card-text{
-  font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -295,8 +296,112 @@ h2{
     width: 500px;
     height: 400px;
 }
+.slide-wrapper.active{
+     -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+
+ .topics-card{
+     /* transform: scale(1);  */
+    transition: transform 0.5s ease;
+} 
+
+.topics-card:hover{
+    
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
 
 
 
+.text-punch-style.active{
+      -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
 
 
+.level-card-style.active{
+    -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+
+
+/*
+h4{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+} 
+ */
+
+
+/* .level-card-style{
+    width:  500px;
+    height: 200px;
+} */
