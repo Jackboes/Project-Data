@@ -111,3 +111,19 @@ window.addEventListener("scroll",function(){
         stepCardLeft.classList.add("active");
     }
 });
+
+
+const textAnime = document.querySelector(".text-pod-style");
+
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+    const textAnimePosition = textAnime.offsetTop - window.innerHeight + 95;
+
+    if(scrollValue>textAnimePosition){
+        textAnime.classList.add("active");
+
+    }
+    else{
+        textAnime.classList.remove("active");
+    }
+});
