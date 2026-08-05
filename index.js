@@ -127,3 +127,39 @@ window.addEventListener("scroll",function(){
         textAnime.classList.remove("active");
     }
 });
+
+const learnMoreAnime = document.querySelector(".extra-box-style");
+
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+    const learnMoreAnimePosition = learnMoreAnime.offsetTop - window.innerHeight + 100;
+
+    if(scrollValue>learnMoreAnimePosition){
+        learnMoreAnime.classList.add("active");
+    }
+    else{
+        learnMoreAnime.classList.remove("active");
+    }
+});
+
+const imageAnime = document.querySelector(".image-container");
+
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+    const imageAnimePosition = imageAnime.offsetTop - window.innerHeight + 100;
+
+    if(scrollValue>imageAnimePosition){
+        imageAnime.classList.add("active");
+    }
+    else{
+        imageAnime.classList.remove("active");
+    }
+});
+
+
+const cbgImage = document.querySelector(".fit-img");
+
+cbgImage.addEventListener("click",function(){
+    window.location.href = "https://open.spotify.com/show/3QiX0ZkjILyGWmpemackWB?si=091b3df823fe416c";
+    // window.location.href is a property and not a function call
+});
