@@ -84,7 +84,7 @@ window.addEventListener("scroll",function(){
     }
 });
 
- const stepCard = document.querySelector(".step-card");
+const stepCard = document.querySelector(".step-card");
 
  window.addEventListener("scroll",function(){
      const scrollValue = window.scrollY;
@@ -97,21 +97,6 @@ window.addEventListener("scroll",function(){
          stepCard.classList.remove("active");
      }
  });
-
-const stepCardLeft = document.querySelector(".step-card-left");
-
-window.addEventListener("scroll",function(){
-    const scrollValue = window.scrollY;
-    const stepCardLeftPosition = stepCardLeft.offsetTop - window.innerHeight + 180;
-
-    if(scrollY>stepCardLeftPosition){
-        stepCardLeft.classList.add("active");
-    }
-    else{
-        stepCardLeft.classList.add("active");
-    }
-});
-
 
 const textAnime = document.querySelector(".text-pod-style");
 
@@ -162,4 +147,61 @@ const cbgImage = document.querySelector(".fit-img");
 cbgImage.addEventListener("click",function(){
     window.location.href = "https://open.spotify.com/show/3QiX0ZkjILyGWmpemackWB?si=091b3df823fe416c";
     // window.location.href is a property and not a function call
+});
+
+const priceTextAnime = document.querySelector(".price-text-style");
+
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+    const priceTextAnimePosition = priceTextAnime.offsetTop - window.innerHeight + 95;
+
+    if(scrollValue>priceTextAnimePosition){
+        priceTextAnime.classList.add("active");
+    }
+    else{
+        priceTextAnime.classList.remove("active");
+    }
+});
+
+
+const priceBoxAnime = document.querySelector(".price-style");
+
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+    const priceBoxAnimePosition = priceBoxAnime.offsetTop - window.innerHeight + 110;
+
+    if(scrollValue>priceBoxAnimePosition){
+        priceBoxAnime.classList.add("active");
+    }
+    else{
+        priceBoxAnime.classList.remove("active");
+    }
+});
+
+const stepLeftAnime = document.querySelector(".step-left");
+
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+    const stepLeftAnimePosition = stepLeftAnime.offsetTop - window.innerHeight + 110
+
+    if(scrollValue>stepLeftAnimePosition){
+        stepLeftAnime.classList.add("active");
+    }
+    else{
+        stepLeftAnime.classList.remove("active");
+    }
+});
+
+const stepRightAnime = document.querySelector(".step-right");
+
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+    const stepRightAnimePosition = stepRightAnime.offsetTop - window.innerHeight + 120
+
+    if(scrollValue>stepRightAnimePosition){
+        stepRightAnime.classList.add("active");
+    }
+    else{
+        stepRightAnime.classList.remove("active");
+    }
 });
