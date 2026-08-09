@@ -1,350 +1,158 @@
-body {
-  width: 100%;
-  height: 100%;
-  --s: 65px; /* control the size */
-  --c1: #dadee1;
-  --c2: #4a99b4;
-  --c3: #9cceb5;
-
-  --_c: 75%, var(--c3) 52.72deg, #0000 0;
-  --_g1: conic-gradient(from -116.36deg at 25% var(--_c));
-  --_g2: conic-gradient(from 63.43deg at 75% var(--_c));
-  background: var(--_g1), var(--_g1) calc(3 * var(--s)) calc(var(--s) / 2),
-    var(--_g2), var(--_g2) calc(3 * var(--s)) calc(var(--s) / 2),
-    conic-gradient(
-      var(--c2) 63.43deg,
-      var(--c1) 0 116.36deg,
-      var(--c2) 0 180deg,
-      var(--c1) 0 243.43deg,
-      var(--c2) 0 296.15deg,
-      var(--c1) 0
-    );
-  background-size: calc(2 * var(--s)) var(--s);
-}
-
-.about-us{
-    display: block;
-    width: 300px;
-    height: auto;
-    max-width: 400px;
-    margin: auto;
-}
-
-.click{
-    display: block;
-    text-align: center;
-    font-style: italic;
-    font-family: "Changa One", sans-serif;
-}
-
-.decor{
-    color: #EA5455;
-    font-family: "Playwrite AU VIC Guides", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.de{
-    color:#2D4059;
-
-}
-
-.ge{
-    color: #2D4059;
-}
-
-.text{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.text-two{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 30px;
-}
-
-.unlock{
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin: 20px auto 10px;   
-    object-fit: contain; 
-}
-
-div.card{
-    text-align: center;
-    border-radius: 20px;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    background-color: #F7FBFC;
-
-}
-
-.head-two{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.card-text{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: Inter;
-}
-
-.chat{
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin: 20px auto 10px;   
-    object-fit: contain;
-}
-
-.card-text-two{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: Inter;
-}
-
-.head-three{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.book-half{
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin: 20px auto 10px;
-    object-fit: contain;
-}
-
-.head-four{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.card-text-three{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: Inter;
-}
-
-.grad-hat{
-    width: 80px;
-    height: 80px;
-    display: block;
-    margin: 20px auto 16px;
-    object-fit: contain;
-}
-
-.head-five{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.card-text-four{
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: Inter;
-}
-
-.story{
-    display: flex;
-    justify-content: center;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 45px;
-    
-}
-
-.story-img{
-    width: 480px;
-    height: auto;
-    margin-bottom: 0;
-    margin-top: -50px;
-}
-
-.Our-Story{
-    display: flex;
-    align-items: flex-start;
-    padding: 20px 40px;
-}
-
-.story-text{
-    flex: 1;
-    padding-right: 10px;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: Inter;
-    font-size: 25px;
-    padding-top: 80px;
-}
-
-.about-me-img{
-    flex: 1;
-    width: 100px;
-    height: auto;
-    margin-bottom: 0;
-    margin-right: -70px;
-    margin-top: -12px;
-    background-color: #D6E6F2;
-    
-}
-
-.about-me-text{
-    flex: 1;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: Inter;
-    font-size: 25px;
-    padding: 100px 100px;
-    margin-top: 0;
-}
-
-.devlop{
-    display: flex;
-    justify-content: center;
-    font-family: "Changa One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 45px;
-    
-}
-
-.card-one{
-    position: relative;
-    display: inline-block;
-}
-
-.card-one::before{
-    content: '';
-    position: absolute;
-    inset: -8px;    
-    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
-    border-radius: 20px;
-    filter: blur(20px); 
-}
-
-.card-two{
-    position: relative;
-    display: inline-block;
-}
-
-.card-two::before{
-    content: '';
-    position: absolute;
-    inset: -8px;    
-    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
-    border-radius: 20px;
-    filter: blur(20px); 
-}
-
-
-.card-three{
-    position: relative;
-    display: inline-block;
-}
-
-.card-three::before{
-    content: '';
-    position: absolute;
-    inset: -8px;    
-    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
-    border-radius: 20px;
-    filter: blur(20px); 
-}
-
-
-.card-four{
-    position: relative;
-    display: inline-block;
-}
-
-.card-four::before{
-    content: '';
-    position: absolute;
-    inset: -8px;    
-    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
-    border-radius: 20px;
-    filter: blur(20px); 
-}
-
-
-.box-style{
-    position: relative;
-    display: inline-block;
-    z-index: 0;
-}
-
-.box-style::before{
-    content: '';
-    position: absolute;
-    inset: -6px;
-    background: linear-gradient(135deg, #ff5f6d, #ffc371, #47cf73, #2193b0);
-    border-radius: 1rem;    
-    z-index: -1;
-    pointer-events: none;
-    filter: blur(20px);
-}
-
-.image-style{
-  background-color: #6392FE;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0 1rem 1rem 0;
-
-}
-
-.head-style{
+.text-style{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.body-style{
+.punchline-style{
     font-family: "Nunito Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.image-two{
-  background-color: #D6E6F2;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0 1rem 1rem 0;
-
+.our-story-text{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
-.card{
-    transition: all 0.4s ease;
-
+.note-text-style{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
-.card:hover{
-    transform: scale(1.1) translateY(-10px);
-    background-color: #F7FBFC;
+.goal-text-style{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
-.container{
-  font-family: "Lilita One", sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  font-style: normal;
+
+h3{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+:root {
+  --bg-primary: #F8FAFC;       /* Soft, clean slate background */
+  --bg-card: #FFFFFF;          /* Pure white card backgrounds */
+  --text-main: #0F172A;        /* Dark slate text */
+  --text-muted: #475569;       /* Muted grey for body paragraphs */
+  --primary-accent: #FFD460;   
+  --secondary-accent: #2D4059; /* Amber/Gold for subtitles and highlights */
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+
+/* Header & Brand Name */
+header  {
+  color: var(--primary-accent);
+  font-weight: 700;
+}
+
+/* Page Titles & Subtitles */
+.text-style {
+  color: var(--primary-accent);
+  font-weight: 700;
+}
+
+.punchline-style {
+  color: var(--secondary-accent);
+  font-weight: 600;
+}
+
+/* Navigation Links */
+.nav-pills .nav-link {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--primary-accent) !important;
+  color: #FFFFFF !important;
+  border-radius: 8px;
+}
+
+/* Body Text Styling */
+.our-story-text, 
+.note-text-style, 
+.goal-text-style {
+  color: var(--text-muted);
+}
+
+/* Subtle image depth */
+.rounded {
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+.diff-style{
+    color: #EA5455;
+}
+
+
+.decoration-text::before{
+  content: "";
+  display: inline-block;
+  width: 44px;
+  height: 28px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-image: url("https://flagcdn.com/de.svg");
+  background-size: cover;
+  vertical-align: middle;
+}
+
+
+/* .our-story-style::before{
+  content: "";
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  margin-right: 30px;
+  border-radius: 10px;
+  background-image: url("../About-Us-Images/book.svg");
+  background-size: cover;
+  vertical-align: middle;
+} */
+
+ body {
+    min-height: 100vh;
+
+    background-color: #fffaf5;
+
+    background-image:
+        linear-gradient(
+            to bottom,
+            /* to bottom means that it has started from top and will end at bottom */
+           rgba(74, 144, 226, 0.30),
+            transparent 45%
+          /* Here the transperent effect or the blend of the colors is caused by the transparent 55% value */
+        ),
+
+        linear-gradient(
+           to top,
+            /* Here 90% means that the color spread horizontally that is from left to right */
+            /* Here 10% means that how would the color look vertically */
+           rgba(100, 181, 246, 0.20),
+            transparent 55%
+        );
 }
