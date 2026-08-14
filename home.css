@@ -88,7 +88,7 @@
 }
 
 .card-header{
-    background-color: #FFFFFF;
+    background-color:  #EEF3F8!important;
 
 }
 
@@ -106,7 +106,7 @@
 }
 
 .list-unstyled{
-    color: #E2574F;
+    color: #116EEE;
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -233,10 +233,10 @@ h2{
 .style-box{
     /* width: 1500px; 
     height: 550px;  */
-    margin-top: 50px; 
-    background-color: white;
+    margin-top: 150px; 
+    background-color: transparent;
     /* overflow: hidden; */
-    margin-top: 150px;
+   
     /* padding: 2rem 1rem;    
     gap: 1.5rem;    */
 }
@@ -286,17 +286,16 @@ h2{
 }
 
 .image-container{
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    
-    
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+ 
 }
 
-.fit-img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain; 
+.fit-img { 
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
 
 /* object fit contain basically shrinks the image and object fit cover fills the image completely inside the box */
 }
@@ -310,7 +309,14 @@ h2{
 .price-style{
     width: 500px;
     height: 400px;
+
 }
+
+.border{
+  border-color: #11EE92 !important;
+  
+}
+
 .slide-wrapper.active{
      -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -771,8 +777,8 @@ h2{
     --bs-btn-border-color:  #116EEE;
     --bs-btn-hover-border-color: #116EEE;
     --bs-btn-hover-color: white;
-    --bs-btn-hover-bg:  #8CA9FF;
-    --bs-btn-hover-border-color: #8CA9FF;  
+    --bs-btn-hover-bg:  #11EE92;
+    --bs-btn-hover-border-color: #11EE92;  
     background-color: #116EEE;
     color:#fff;
     font-family: "Changa one", sans-serif;
@@ -796,9 +802,70 @@ h2{
     font-style: normal;
 }
 
+.learning-section {
+  
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(234, 84, 85, 0.10),
+            transparent 45%
+        ),
+        radial-gradient(
+            circle at 85% 80%,
+            rgba(255, 212, 96, 0.10),
+            transparent 40%
+        ),
+        #FFF9F2;
+}
+
+
+
+
+.btn-outline-price-feat{
+  --bs-btn-color:  #116EEE;
+    --bs-btn-border-color:  #116EEE;
+    --bs-btn-hover-border-color: #116EEE;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #11EE92;
+    --bs-btn-hover-border-color: #11EE92;  
+    background-color: #116EEE;
+    color:#fff;
+    font-family: "Changa one", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+}
+ 
+
+
 
 /* 
-.level-one-style{
+.working-steps{
+  background:
+    radial-gradient(
+        circle at 15% 20%,
+        rgba(108, 99, 255, 0.16),
+        transparent 45%
+    ),
+    #F7F6FF;
+} */
+
+
+
+
+/* .working-body{
+ 
+background-color: #665a78;
+background-image:
+  radial-gradient(circle at 28% 28%, rgb(255, 247, 255) 0%, rgba(237, 228, 239, 0.82) 37%, rgba(197, 187, 204, 0.55) 78%, rgba(102, 90, 120, 0) 104%),
+  radial-gradient(circle at 66% 22%, rgb(229, 201, 245) 0%, rgba(214, 188, 230, 0.82) 30%, rgba(181, 159, 198, 0.55) 62%, rgba(102, 90, 120, 0) 83%),
+  radial-gradient(circle at 70% 68%, rgb(188, 166, 232) 0%, rgba(178, 157, 219, 0.82) 35%, rgba(155, 137, 189, 0.55) 74%, rgba(102, 90, 120, 0) 99%),
+  radial-gradient(circle at 28% 72%, rgb(158, 206, 216) 0%, rgba(151, 192, 204, 0.82) 32%, rgba(137, 162, 180, 0.55) 68%, rgba(102, 90, 120, 0) 91%);
+filter: hue-rotate(0deg) saturate(100%) brightness(100%) contrast(100%);
+} */
+
+
+/* .level-one-style{
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 20px;
   transition: all .3s;
@@ -817,8 +884,8 @@ h2{
 .level-one-card:hover {
   transform: scale(0.98);
   border-radius: 20px;
-} */
-
+}
+ */
 
 /*
 h4{
