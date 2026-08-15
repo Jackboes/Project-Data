@@ -205,3 +205,10 @@ window.addEventListener("scroll",function(){
         stepRightAnime.classList.remove("active");
     }
 });
+
+
+const signCall = document.querySelector(".butn-call");
+
+    signCall.addEventListener("click",function(){
+    window.location.href = "../HTML files/sign.html"
+});
