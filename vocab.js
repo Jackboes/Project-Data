@@ -1,26 +1,16 @@
-var topButtons = document.querySelectorAll(".btn");
+const cardAnime = document.querySelectorAll(".card-grp-two");
 
-// Now here the .length is used inside the for loop because when we write in the document.querySelectorAll(".btn") this basically give us the number of elements in that array not the actual vaule of the array which is present at that position.
-// But if still i want to do it i can do in this way, store topButtons inside another variable const buttonAccess = topButtons;
-for(var i = 0; i< topButtons.length; i++){
-    topButtons[i].addEventListener("click",function(){
-        if(this.innerHTML == "Home"){
-            window.location.href = "../HTML files/index.html";
-            alert("Welcome, back!");
+window.addEventListener("scroll",function(){
+    const scrollValue = window.scrollY;
+
+    cardAnime.forEach(function(cardAnime){
+        const cardAnimePosition = cardAnime.offsetTop - window.innerHeight + 100;
+
+        if(scrollY>cardAnimePosition){
+            cardAnime.classList.add("active");
         }
-
-        else if(this.innerHTML == "Flashcards"){
-            window.location.href = "flashcards.html";
-        }
-
         else{
-            window.location.href = "../HTML files/about.html";
+            cardAnime.classList.remove("active");
         }
     });
-}
-
-
-window.addEventListener("load",function(){
-    const headAnime = document.querySelector(".head-effect");
-    headAnime.classList.add("active");
 });
