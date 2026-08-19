@@ -14,3 +14,14 @@ window.addEventListener("scroll",function(){
         }
     });
 });
+
+
+const button = document.querySelector(".but-select");
+const options = document.querySelectorAll(".dropdown-item");
+
+options.forEach(function(option){
+    option.addEventListener("click",function(){
+        button.textContent = option.textContent;
+    });
+});
+// Here textContent is the property which helps to give the text written in an button or an option and that is just exchanged here.
