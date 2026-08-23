@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vocabulary</title>
-    <title>Deutsch Lernen</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@400&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Germania+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Germania+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Germania+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="help.css">
-</head>
-<body>
-
-
+<%- include('partials/header',{title: 'Vocabulary', pageCss: "vocab.css"})  %>
 
 <div class="d-flex justify-content-md-end align-items-md-center">
     <div class="dropdown mt-3 me-3">
@@ -46,7 +20,7 @@
     <div class="card text-center shadow-sm border-3 rounded-4" style="width: 18rem;border-color: #2D4059;">
         <div class="d-flex justify-content-center mt-4">
             <div class="rounded-circle p-3"style="width: 190px; height: 190px;background-color: #53657A;">
-                <img src="./Vocabulary-images/public-speaking.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.6);border-radius: 30%;">
+                <img src="/images/Vocabulary-images/public-speaking.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.6);border-radius: 30%;">
             </div>
         </div>
 
@@ -62,14 +36,14 @@
                 <span class="badge bg-primary-subtle text-primary rounded-pill">A1</span>
             </div>
 
-            <a href="#" class="btn btn-outline-custom-one w-100 rounded-3"> Learn Now →</a>
+            <a href="/personalInfo" class="btn btn-outline-custom-one w-100 rounded-3"> Learn Now →</a>
         </div>
     </div>
 
     <div class="card text-center shadow-sm border-3 rounded-4" style="width: 18rem; border-color:#EA5455;">
          <div class="d-flex justify-content-center mt-4">
             <div class="rounded-circle p-3"style="width: 190px; height: 190px;background-color: #F38B8D;">
-                <img src="./Vocabulary-images/family-relations.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1);border-radius: 30%;">
+                <img src="/images/Vocabulary-images/family-relations.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1);border-radius: 30%;">
             </div>
         </div>
 
@@ -85,7 +59,7 @@
                 <span class="badge bg-primary-subtle text-primary rounded-pill">A1</span>
             </div>
 
-            <a href="#" class="btn btn-outline-custom-two w-100 rounded-3"> Learn Now →</a>
+            <a href="/famRelation" class="btn btn-outline-custom-two w-100 rounded-3"> Learn Now →</a>
         </div>
     </div>
 
@@ -94,7 +68,7 @@
     <div class="card text-center shadow-sm border-3 rounded-4" style="width: 18rem;border-color: #FFD460;">
         <div class="d-flex justify-content-center mt-4">
             <div class="rounded-circle p-3"style="width: 190px; height: 190px;background-color: #FFE47A;">
-                <img src="./Vocabulary-images/house-halt.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;">
+                <img src="/images/Vocabulary-images/house-halt.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;">
             </div>
         </div>
 
@@ -110,7 +84,7 @@
                 <span class="badge bg-primary-subtle text-primary rounded-pill">A1</span>
             </div>
 
-            <a href="#" class="btn btn-outline-custom-three w-100 rounded-3"> Learn Now →</a>
+            <a href="/houseHold" class="btn btn-outline-custom-three w-100 rounded-3"> Learn Now →</a>
         </div>
     </div>
 </div>
@@ -125,7 +99,7 @@
     <div class="card text-center shadow-sm border-3 rounded-4 h-100" style="width: 18rem; border-color: #b1b5ee;">
         <div class="d-flex justify-content-center mt-4">
             <div class="rounded-circle p-3" style="width: 190px; height: 190px;background-color: #b1b5ee;">
-                <img src="./Vocabulary-images/food-drinks.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;">
+                <img src="/images/Vocabulary-images/food-drinks.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;">
             </div>
         </div>
 
@@ -141,7 +115,7 @@
                 <span class="badge bg-primary-subtle text-primary rounded-pill">A1</span>
             </div>
 
-            <a href="#" class="btn btn-outline-custom-four w-100 rounded-3 mt-auto"> Learn Now →</a>
+            <a href="/food" class="btn btn-outline-custom-four w-100 rounded-3 mt-auto"> Learn Now →</a>
         </div>
     </div>
     </div>
@@ -150,7 +124,7 @@
     <div class="card text-center shadow-sm border-3 rounded-4 h-100" style="width: 18rem; border-color: #6C63FF;">
         <div class="d-flex justify-content-center mt-4">
             <div class="rounded-circle p-3" style="width: 190px; height: 190px;background-color: #817AFF;">
-                <img src="./Vocabulary-images/shopping-clothes.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;">
+                <img src="/images/Vocabulary-images/shopping-clothes.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;">
             </div>
         </div>
 
@@ -166,7 +140,7 @@
                 <span class="badge bg-primary-subtle text-primary rounded-pill">A1</span>
             </div>
 
-            <a href="#" class="btn btn-outline-custom-five w-100 rounded-3 mt-auto"> Learn Now →</a>
+            <a href="/shopping" class="btn btn-outline-custom-five w-100 rounded-3 mt-auto"> Learn Now →</a>
         </div>
     </div>
     </div>
@@ -175,7 +149,7 @@
     <div class="card text-center shadow-sm border-3 rounded-4 h-100" style="width: 18rem; border-color: #3b82f6;">
         <div class="d-flex justify-content-center mt-4">
             <div class="rounded-circle bg-primary-subtle p-3" style="width: 190px; height: 190px;">
-                <img src="./Vocabulary-images/travel-holiday.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;">
+                <img src="/images/Vocabulary-images/travel-holiday.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;">
             </div>
         </div>
 
@@ -191,7 +165,7 @@
                 <span class="badge bg-primary-subtle text-primary rounded-pill">A1</span>
             </div>
 
-            <a href="#" class="btn btn-primary w-100 rounded-3 mt-auto"> Learn Now →</a>
+            <a href="/travel" class="btn btn-primary w-100 rounded-3 mt-auto"> Learn Now →</a>
         </div>
     </div>
     </div>
@@ -208,7 +182,7 @@
         <div class="card text-center shadow-sm border-3 rounded-4" style="width: 18rem; border-color: #7efd3c;">
             <div class="d-flex justify-content-center mt-4">
                 <div class="rounded-circle p-3" style="width: 190px; height: 190px;background-color: #C9F7AE;">
-                    <img src="./Vocabulary-images/city-transport.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1);border-radius: 30%;">
+                    <img src="/images/Vocabulary-images/city-transport.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1);border-radius: 30%;">
                 </div>
             </div>
 
@@ -224,7 +198,7 @@
                     <span class="badge bg-primary-subtle text-primary rounded-pill">A1</span>
                 </div>
 
-                <a href="#" class="btn btn-outline-custom-six w-100 rounded-3"> Learn Now →</a>
+                <a href="/transport" class="btn btn-outline-custom-six w-100 rounded-3"> Learn Now →</a>
             </div>
         </div>
     </div>
@@ -233,7 +207,7 @@
         <div class="card text-center shadow-sm border-3 rounded-4" style="width: 18rem;border-color: #b5f393;">
             <div class="d-flex justify-content-center mt-4">
                 <div class="rounded-circle p-3" style="width: 190px; height: 190px;background-color: #C9F7AE;">
-                    <img src="./Vocabulary-images/work-office.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;"">
+                    <img src="/images/Vocabulary-images/work-office.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.2);border-radius: 30%;"">
                 </div>
             </div>
 
@@ -249,7 +223,7 @@
                     <span class="badge bg-primary-subtle text-primary rounded-pill">A1</span>
                 </div>
 
-                <a href="#" class="btn btn-outline-custom-seven w-100 rounded-3"> Learn Now →</a>
+                <a href="/workProf" class="btn btn-outline-custom-seven w-100 rounded-3"> Learn Now →</a>
             </div>
         </div>
     </div>
@@ -259,7 +233,7 @@
         <div class="card text-center shadow-sm border-3 rounded-4" style="width: 18rem;border-color: #98d2ac;">
             <div class="d-flex justify-content-center mt-4">
                 <div class="rounded-circle p-3" style="width: 190px; height: 190px;background-color: #B6E2C5;">
-                    <img src="./Vocabulary-images/school-university.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.1);border-radius: 30%;"">
+                    <img src="/images/Vocabulary-images/school-university.svg" class="img-fluid" alt="Travel" style="width: 145px; height: 145px; object-fit: cover; transform: scale(1.1);border-radius: 30%;"">
                 </div>
             </div>
 
@@ -275,7 +249,7 @@
                     <span class="badge bg-primary-subtle text-primary rounded-pill">A1</span>
                 </div>
 
-                <a href="#" class="btn btn-outline-custom-eight w-100 rounded-3"> Learn Now →</a>
+                <a href="/schoolUni" class="btn btn-outline-custom-eight w-100 rounded-3"> Learn Now →</a>
             </div>
         </div>
     </div>
@@ -285,8 +259,4 @@
 
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="../JS-files/help.js" charset="UTF-8"></script>
-</body>
-</html>
+<%- include('partials/footer', { pageJs: 'vocab.js' }) %>
