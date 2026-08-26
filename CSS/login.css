@@ -1,0 +1,72 @@
+.box{
+    background-color: #FFD93D;
+}
+h1{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+label{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.but-style{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.btn-primary{
+  --bs-btn-bg: #FFD93D;
+  --bs-btn-border-color: #FFD93D;
+  --bs-btn-hover-bg: #2B2A28;
+  --bs-btn-hover-border-color: black;
+}
+
+.text-decora{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+input.form-control:focus{
+  border: 2px solid #FCA5A5 !important;
+  border-radius: 3px;
+  box-shadow: 0 0 0 0.25rem #FCA5A5 !important;
+}
+
+body{
+   background: linear-gradient(135deg, #ffe4e6, #fecdd3, #fda4af);
+}
+
+.style-form{
+    border-radius: 20px;
+    overflow: hidden;  
+    box-shadow: 0 140px 180px rgba(0, 0, 0, 1);
+    
+    
+}
+
+.btn-outline-custom{
+    --bs-btn-color:  #2D4059;
+    --bs-btn-border-color:  #2D4059;
+    --bs-btn-hover-border-color: #2D4059;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg:  #EA5455;
+    --bs-btn-hover-border-color:  #EA5455;
+    background-color: #2D4059;
+    color: white;     
+}
+
+.nav-link{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+}
