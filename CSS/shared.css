@@ -1,0 +1,52 @@
+.navbar{
+    background-color: #FBF6EF !important;
+}
+
+.deu{
+    color: #2D4059;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.deu::before{
+  content: "";
+  display: inline-block;
+  width: 44px;
+  height: 28px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-image: url("https://flagcdn.com/de.svg");
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.lern{
+    color: #E2574F;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-toggler{
+    border: 2px solid #2B2A28;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(43,42,40,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.text-decora{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+}
+
+.nav-link{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+}
